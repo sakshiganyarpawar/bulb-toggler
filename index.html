@@ -6,7 +6,7 @@
     <title>BulbToggler</title>
     <style>
         .container{
-            width: 700px;
+            width: 650px;
             height: 700px;
             border: 3px solid orangered;
             border-radius: 20px;
@@ -20,7 +20,7 @@
 }
 .img-bulb{
     width: 500px;
-    margin-left: 100px;
+    margin-left: 77px;
 }
 .btn-container{
     display: flex;
@@ -38,6 +38,26 @@
 }
 .btn-toggle:hover{
     border-width:4px ;
+}
+@media  screen and (max-width:530px) {
+    .container{
+    width: 400px;
+    height: 500px;
+  }
+  .img-bulb{
+    width: 250px;
+    margin-left: 80px;
+}
+}
+@media screen   and (min-width:531px) and (max-width: 800px){
+    .container{
+    width: 500px;
+    height: 600px;
+  }
+  .img-bulb{
+    width: 400px;
+    margin-left: 50px;
+}
 }
     </style>
 </head>
