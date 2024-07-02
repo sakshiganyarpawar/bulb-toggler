@@ -4,8 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BulbToggler</title>
+    <style>
+       
+    </style>
 </head>
-<body>
-    
+<body class="body" id="body">
+    <div class="container">
+   <h1 class="app-title">SparkSwitch</h1> 
+<img src="./bulb-off.png" class="img-bulb" id="img-bulb"/>
+<div class="btn-container">
+    <button type="button" class="btn-toggle" onclick="toggleBulb('on')">ON</button>
+    <button type="button" class="btn-toggle" onclick="toggleBulb('off')">OFF</button>
+</div>
+</div>
+<script>
+    function toggleBulb(state){
+        const bulbElement=document.getElementById("img-bulb")
+        bulbElement.src= state=='on'? "./bulb-on.png" : "./bulb-off.png"
+    }
+</script>
 </body>
 </html>
